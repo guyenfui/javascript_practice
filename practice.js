@@ -100,8 +100,139 @@ console.log(lostDollar);
 var favoriteAnimal = "dog";
 console.log("My favorite animal: " + favoriteAnimal);
 
-//String Interpolation
+//EX8 String Interpolation
 let myName = `Huy`;
 let myCity = `Tokyo`;
 console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+
+//Ex9 typeof operator
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable);
+newVariable = 1;
+console.log(typeof newVariable);
+
+//EX10 Review Variables
+let variable1 = 1;
+console.log(typeof variable1);
+variable1 = "test";
+console.log(variable1);
+console.log(typeof variable1);
+
+//CONDITIONAL STATEMENTS
+//EX1 The if keyword
+let sale = true;
+sale = false;
+if (sale===true){
+  console.log("Time to buy!");
+}
+
+//EX2 If...Else Statements
+let sale = true;
+
+sale = false;
+
+if(sale) {
+  console.log('Time to buy!');
+}
+//EX3
+else {
+  console.log("Time to wait for a sale.");
+}
+
+//EX4 Comparison Operators
+let hungerLevel = 7;
+if (hungerLevel > 7){
+  console.log("Time to eat!");
+}
+else {
+  console.log("We can eat later!");
+}
+//EX5 Logical Operators
+let mood = 'sleepy';
+let tirednessLevel = 6;
+if (mood === "sleepy" && tirednessLevel > 8){
+  console.log("time to sleep");
+}
+else {
+  console.log("not bed time yet");
+}
+
+//EX6 Truthy and Falsy
+let wordCount = 1;
+
+if (wordCount) {
+  console.log("Great! You've started your work!");
+} else {
+  console.log('Better get to work!');
+}
+
+
+let favoritePhrase = '';
+
+if (favoritePhrase) {
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
+
+//EX7 Truthy and Falsy Assignment
+let tool = '';
+
+tool = 'marker';
+
+// Use short circuit evaluation to assign writingUtensil variable below:
+let writingUtensil = tool || 'pen';
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+//EX8 Ternary Operator
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+
+let isCorrect = true;
+
+isCorrect ? console.log('Correct!'):
+  console.log('Incorrect!');
+
+
+let favoritePhrase = 'Love That!';
+
+favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+
+//EX9 Else If Statements
+let season = 'summer';
+
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} else if(season === 'winter') {
+  console.log("It\'s winter! Everything is covered in snow.");
+} else if(season === "fall") {
+  console.log("It\'s fall! Leaves are falling!");
+} else if(season === "summer"){
+  console.log("It\'s sunny and warm because it\'s summer!");
+}
+
+else {
+  console.log('Invalid season.');
+}
+
+//EX10 The switch keyword
+let athleteFinalPosition = 'first place';
+switch(athleteFinalPosition){
+  case "first place":
+    console.log("You get the gold medal!");
+    break;
+  case "second place":
+    console.log("You get the silver medal!");
+    break;
+  case "third place":
+    console.log("You get the bronze medal!");
+    break;
+  default:
+    console.log("No medal awarded.");
+    break;
+}
+
 
