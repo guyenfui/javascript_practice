@@ -235,4 +235,68 @@ switch(athleteFinalPosition){
     break;
 }
 
+//FUNCTIONS
+//EX1 Function Declarations
+function getReminder(){
+  console.log("Water the plants.");
+}
+function greetInSpanish(){
+  console.log("Buenas Tardes.")
+}
+//EX2 Calling a Function
+function sayThanks(){
+  console.log("Thank you for your purchase! We appreciate your business.");
+}
 
+sayThanks();
+sayThanks();
+sayThanks();
+
+//EX3 Parameters and Arguments
+function sayThanks(name) {
+  console.log("Thank you for your purchase "+ name + "! We appreciate your business.");
+}
+
+sayThanks("Cole");
+
+//EX4 Default Parameters
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+makeShoppingList();
+//EX5 Default Parameters
+
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+makeShoppingList(); 
+
+//EX6 Return
+function monitorCount(rows, columns){
+  return rows * columns;
+};
+const numOfMonitors = monitorCount(5,4);
+
+console.log(numOfMonitors);
+
+//EX7 Helper Functions
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+function costOfMonitors(rows, columns){
+  return monitorCount(rows, columns) *200;
+}
+const totalCost = costOfMonitors(5,4);
+console.log(totalCost);
+
+//EX8 Function Expressions
+
+const plantNeedsWater = function(day){
+  if (day === 'Wednesday'){
+    return true;
+  }
+};
