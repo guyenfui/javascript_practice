@@ -299,4 +299,42 @@ const plantNeedsWater = function(day){
   if (day === 'Wednesday'){
     return true;
   }
+  else {
+    return false;
+  }
 };
+console.log(plantNeedsWater("Tuesday"));
+
+//EX9 Arrow Functions
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+//EX10 Concise Body Arrow Functions
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+// ->
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+//Scope
+//EX1 Blocks and Scope
+//EX2 Blocks and Scope
+const city = "New York City";
+function logCitySkyline(){
+  let skyscraper = "Empire State Building";
+  return 'The stars over the ' + skyscraper + ' in ' + city;
+};
+console.log(logCitySkyline());
+
+//EX3 Global Scope
+
+
