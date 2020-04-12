@@ -337,4 +337,111 @@ console.log(logCitySkyline());
 
 //EX3 Global Scope
 
+const satellite = 'The Moon'
+
+const galaxy = 'The Milky Way'
+const stars = 'North Star'
+
+const callMyNightSky = () => {
+  return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+};
+
+console.log(callMyNightSky()); 
+
+//EX4 Block Scope
+function logVisibleLightWaves(){
+  const lightWaves = 'Moonlight';
+  console.log(lightWaves);
+};
+logVisibleLightWaves();
+//console.log(lightWaves);
+
+//EX5 Scope Pollution
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+let stars = 'North Star';
+
+const callMyNightSky = () => {
+  stars = 'Sirius';
+  
+	return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+};
+
+console.log(callMyNightSky());
+console.log(stars);
+
+//EX6 Practice Good Scoping
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  // Add if statement here:
+  if(region === 'The Arctic'){
+    let lightWaves = "Northern Lights";
+    console.log(lightWaves);
+  }
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+//Arrays
+//EX1
+const hobbies = ["hi",`tets`,""];
+console.log(hobbies);
+//EX2 Accessing Elements
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+let listItem = (famousSayings[0]);
+console.log(famousSayings[2]);
+console.log(listItem);
+//EX3 Update Elements
+let groceryList = ['bread', 'tomatoes', 'milk'];
+
+groceryList[1] = "avocados"; 
+//EX4 Arrays with let and const
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+condiments[0] = ("Mayo");
+console.log(condiments);
+condiments = ["Mayo"];
+console.log(condiments);
+utensils[3] = ("Spoon");
+console.log(utensils);
+
+//EX6 The .length property
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+
+console.log(objectives.length);
+//EX7 The .push() Method
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+
+chores.push("test1","test2");
+console.log(chores);
+//EX8 The .pop() Method
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+chores.pop();
+console.log(chores);
+
+//EX9 More Array Methods
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+groceryList.shift();
+
+console.log(groceryList);
+
+groceryList.unshift('popcorn');
+
+console.log(groceryList);
+
+console.log(groceryList.slice(1, 4));
+
+console.log(groceryList);
+
+const pastaIndex = groceryList.indexOf('pasta');
+
+console.log(pastaIndex);
+
+//EX10 Arrays and Functions
+
+
 
