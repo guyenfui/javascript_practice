@@ -464,6 +464,39 @@ const numberClusters = [[1, 2], [3, 4], [5, 6]];
 const target = numberClusters[3][1];
 console.log(target);
 
+//LOOPS
+//EX2 Write your code below
+
+let vacationSpots = ["a","b","c"];
+
+console.log(vacationSpots[1])
+console.log(vacationSpots[2])
+console.log(vacationSpots[0])
+
+//EX3 The For Loop
+// Write your code below
+
+for (let loops = 5; loops < 11;loops++){
+  console.log(loops);
+}
+
+//EX4 Looping in Reverse
+// The loop below loops from 0 to 3. Edit it to loop backwards from 3 to 0
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter);
+}
+
+//EX 5 Looping through Arrays
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+// Write your code below
+for (let i = 0; i < vacationSpots.length ; i++){
+  console.log("I would love to visit " + vacationSpots[i]);
+}
+  
+
+
+
 
 
 
